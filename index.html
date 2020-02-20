@@ -7,14 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 
 <body>
     <div id="calcBox">
-        <table id="calculator" cellspacing="0">
+        <table cellpadding="0" cellspacing="0">
             <tr>
-                <td colspan="4"><div id="displayBar">0</div></td>
+                <td id="displayBar" colspan="4">0</td>
             </tr>
             <tr>
                 <td><button onclick="getValue(this)" class="button">+</button></td>
@@ -35,10 +36,10 @@
                 <td><button onclick="getValue(this)" class="button">2</button></td>
             </tr>
             <tr>
+                <td><button onclick="getValue(this)" class="button">C</button></td>
                 <td><button onclick="getValue(this)" class="button">1</button></td>
                 <td><button onclick="getValue(this)" class="button">0</button></td>
-                <td><button onclick="getValue(this)" class="button">.</button></td>
-                <td><button onclick="getValue(this)" class="button">.</button></td>
+                <td><button onclick="getValue(this)" class="button">=</button></td>
             </tr>
         </table>
     </div>

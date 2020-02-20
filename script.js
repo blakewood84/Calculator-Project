@@ -14,12 +14,11 @@ function getValue(obj)
         {
             displayBar.innerHTML = "0";
         }
+    else if(displayBar == "0")
+        {
+            displayBar.innerHTML = inputNum;
+        }
     else
-        if(displayBar == "0")
-            {
-                displayBar.innerHTML = inputNum;
-            }
-        else
         {   
             displayBar.innerHTML += inputNum;
         }
