@@ -1,30 +1,31 @@
 //All JavaScript code by Blake Wood Jr.
-const displayBar = document.getElementById("displayBar");
+let displayBar = document.getElementById("displayBar");
 
-function getValue(obj)
+function getValue(obj) 
 {
     let inputNum = obj.innerHTML;
-    displayBar.innerHTML = "";
-    
-    if(inputNum == "=")
-        {
-            displayBar.innerHTML = eval(displayBar.innerHTML);
-        }
-    else if (inputNum == "C")
-        {
-            displayBar.innerHTML = "0";
-        }
-    else if(displayBar == "0")
+
+    if (inputNum == "=") 
+    {
+        displayBar.innerHTML = eval(displayBar.innerHTML);
+    } 
+    else if (inputNum == "C") 
+    {
+        displayBar.innerHTML = "0";
+    }
+    else if (inputNum == "AC")
+    {
+        displayBar.innerHTML = "0";
+    }
+    else 
+    {
+        if (displayBar.innerHTML == "0") 
         {
             displayBar.innerHTML = inputNum;
-        }
-    else
-        {   
+        } 
+        else 
+        {
             displayBar.innerHTML += inputNum;
         }
-        
+    }
 }
-
-
-
-
